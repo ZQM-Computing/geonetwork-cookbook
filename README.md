@@ -15,7 +15,7 @@ A **GeoNetwork cookbook** for spatial metadata catalogs, harvesting, and CSW sea
 
 ## Repository role and status
 
-**Status:** Active, public — first pattern pass written (design-only, gate 1 target; runtime validation pending).
+**Status:** Active, public — four design-stage examples with shell/fixture contracts. CI validates syntax, fixture structure, and HTTP failure handling; GeoNetwork/Elasticsearch endpoint behavior remains unverified on the fleet.
 
 **What this repository is:** GeoNetwork patterns — see the table below.
 
@@ -37,24 +37,27 @@ Data managers and catalog builders who publish discoverable metadata for geospat
 
 | # | Example | Status | What it demonstrates |
 |---|---------|--------|----------------------|
-| 01 | [01-record-create](examples/01-record-create/README.md) | Written (design-only) | Creating and validating ISO metadata records |
-| 02 | [02-harvest](examples/02-harvest/README.md) | Written (design-only) | Harvesting remote catalogs on a schedule |
-| 03 | [03-csw-search](examples/03-csw-search/README.md) | Written (design-only) | CSW search patterns for clients |
-| 04 | [04-es-index](examples/04-es-index/README.md) | Written (design-only) | The GeoNetwork → Elasticsearch indices: gn-records, gn-features, gn-searchlogs |
+| 01 | [01-record-create](examples/01-record-create/README.md) | Written; API validation pending | Creating and validating ISO metadata records |
+| 02 | [02-harvest](examples/02-harvest/README.md) | Setup/list only; run/status pending | Harvesting remote catalogs on a schedule |
+| 03 | [03-csw-search](examples/03-csw-search/README.md) | Written; endpoint validation pending | CSW search patterns for clients |
+| 04 | [04-es-index](examples/04-es-index/README.md) | Written; mapping validation pending | The GeoNetwork → Elasticsearch indices: gn-records, gn-features, gn-searchlogs |
 
 ## Repository layout
 
 ```text
 geonetwork-cookbook/
-├── examples/          # pattern passes, landing in follow-up work
+├── examples/          # four design-stage patterns with explicit runtime gates
+├── tests/             # fixture and HTTP safety contracts
+└── .github/workflows/ # shell/XML/JSON/contract CI
 ├── README.md
 └── LICENSE
 ```
 
 ## Roadmap
 
-- First pattern pass: the first two table rows
-- Second pass: the remaining rows, from fleet-verified setups
+- Validate record create/read-back and CSW query response schemas against GeoNetwork 4.4.12.
+- Confirm harvester run/status endpoint spellings before adding automated run commands.
+- Verify Elasticsearch mappings and the Node-3/Node-4 index scope before asserting index-level behavior.
 
 ## Contributing
 
