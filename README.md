@@ -15,7 +15,7 @@ A **GeoNetwork cookbook** for spatial metadata catalogs, harvesting, and CSW sea
 
 ## Repository role and status
 
-**Status:** Active, public — seeding. Pattern passes land in follow-up work from fleet-verified setups; the tables below list what is planned, not what is already written.
+**Status:** Active, public — first pattern pass written (design-only, gate 1 target; runtime validation pending).
 
 **What this repository is:** GeoNetwork patterns — see the table below.
 
@@ -33,14 +33,14 @@ Data managers and catalog builders who publish discoverable metadata for geospat
 - Java 21 runtime
 - Elasticsearch for the index pass (see elasticsearch-cookbook)
 
-## Patterns (planned)
+## Patterns
 
-| # | Example | What it will demonstrate |
-|---|---------|--------------------------|
-| 01 | `01-record-create` | Creating and validating ISO metadata records |
-| 02 | `02-harvest` | Harvesting remote catalogs on a schedule |
-| 03 | `03-csw-search` | CSW search patterns for clients |
-| 04 | `04-es-index` | The GeoNetwork → Elasticsearch indices: gn-records, gn-features, gn-searchlogs |
+| # | Example | Status | What it demonstrates |
+|---|---------|--------|----------------------|
+| 01 | [01-record-create](examples/01-record-create/README.md) | Written (design-only) | Creating and validating ISO metadata records |
+| 02 | [02-harvest](examples/02-harvest/README.md) | Written (design-only) | Harvesting remote catalogs on a schedule |
+| 03 | [03-csw-search](examples/03-csw-search/README.md) | Written (design-only) | CSW search patterns for clients |
+| 04 | [04-es-index](examples/04-es-index/README.md) | Written (design-only) | The GeoNetwork → Elasticsearch indices: gn-records, gn-features, gn-searchlogs |
 
 ## Repository layout
 
