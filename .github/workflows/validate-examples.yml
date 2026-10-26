@@ -22,6 +22,10 @@ jobs:
             echo "Checking $script"
             bash -n "$script"
           done < <(find examples -type f -name '*.sh' -print0)
+      - name: Parse JSON fixtures
+        run: python -m json.tool examples/02-harvest/harvester.json > /dev/null
+      - name: Run fixture and HTTP safety contracts
+        run: python -m unittest discover -s tests -v
       - name: Parse XML fixtures
         run: |
           python - <<'PY'
