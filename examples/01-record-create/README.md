@@ -11,7 +11,8 @@ data — so it can never be mistaken for a published catalog entry.
 
 - GeoNetwork 4.4.12 (Jetty bundle, port 8082) — fleet seed version
 - Java 21 runtime
-- `curl`, `xmllint` (for the local schema check)
+- `curl`, `xmllint`
+- Optional: a local ISO 19139 XSD file if schema validation is required
 - A GeoNetwork account with editor rights (placeholder credentials only;
   the fleet's default-admin handling is an owner follow-up — never bake
   real credentials into an example)
