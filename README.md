@@ -11,7 +11,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A **GeoNetwork cookbook** for spatial metadata catalogs, harvesting, and CSW search. Patterns are drawn from the ZQM fleet's GeoNetwork 4.4.12 installs (Jetty bundle, port 8082) on all three Windows nodes, including its Elasticsearch index pairing on Node-3 and Node-4. It is intended for Data managers and catalog builders who publish discoverable metadata for geospatial assets. Validate each pattern against your own data, software versions, and operating environment before adopting it.
+A **GeoNetwork cookbook** for spatial metadata catalogs, harvesting, and CSW search. Patterns are drawn from the ZQM fleet's GeoNetwork 4.4.12 installs (Jetty bundle, port 8082) on all three Windows nodes (as of Oct 2026; verify against the current fleet), including its Elasticsearch index pairing on Node-3 and Node-4. It is intended for Data managers and catalog builders who publish discoverable metadata for geospatial assets. Validate each pattern against your own data, software versions, and operating environment before adopting it.
 
 ## Repository role and status
 
